@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     const activeStyle={
         fontWeight: "bold",
-        color: "red"
+        color: "blue"
     }
     return (
        
@@ -12,6 +12,7 @@ const Header = () => {
             <NavLink activeStyle={activeStyle} to="/home"  >Home</NavLink>
             <NavLink activeStyle={activeStyle} to="/friends">Friends</NavLink>
             <NavLink activeStyle={activeStyle} to="/about"  >About</NavLink>
+            <NavLink activeStyle={activeStyle} to="/about/culture">Culture</NavLink>
         </nav>
     );
 };

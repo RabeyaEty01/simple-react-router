@@ -6,6 +6,8 @@ import About from './components/About/About';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
+import FriendDetail from './components/FriendDetail/FriendDetail';
+import Culture from './components/Culture/Culture';
 
 
 function App() {
@@ -23,9 +25,16 @@ function App() {
           <Route path="/friends">
             <Friends></Friends>
           </Route>
-          <Route path="/about">
+          <Route path="/friend/:friendId">
+            <FriendDetail></FriendDetail>
+          </Route>
+          <Route exact path="/about">
             <About></About>
           </Route>
+          <Route exact path="/about/culture">
+            <Culture></Culture>
+          </Route>
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>
